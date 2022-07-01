@@ -1,148 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"
+	>
+	<meta
+			content="ie=edge" http-equiv="X-UA-Compatible"
+	>
 	<link
-			href="images/logo/favicon.ico"
-			rel="icon"
-			sizes="32x32"
-			type="image/png"
-	/>
-	<link rel="stylesheet" href="styles.css">
+			href="images/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"
+	>
+	<script
+			crossorigin="anonymous" defer src="https://kit.fontawesome.com/7a109a51e8.js"
+	></script>
 	<title>Digitall</title>
-	<script src="https://kit.fontawesome.com/5095a288b3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav>
-	<span id="logo"><img src="images/logo/android-chrome-192x192.png" alt="Phone Logo"></span>
-	<span id="menu-right">
-            <span id="menu-item1" class="menu-item">
-                <a href="#store">Menu Items</a>
-                <img src="images/icons8-drop-down-48.png" alt="dropdown-icon" class="dropdown">
-                <div class="drop-down-box">
-                    <span class="drop-down-item">Menu 1</span>
-                    <span class="drop-down-item">Menu 2</span>
-                    <span class="drop-down-item">Menu 3</span>
-                </div>
-            </span>
-            <span id="menu-item2" class="menu-item">
-                <a href="">Photos</a>
-            </span>
-            <span class="menu-item">
-                <button id="btn-shop-now">Shop now</button>
-            </span>
-            <span id="mobile-menu"><i class="fa-solid fa-bars"></i></span>
-        </span>
+<nav class="main-nav">
+	<div class="main-nav__logo">
+		<a class="main-nav__logo-link"> <img
+				alt="Store's Logo" src="images/logo/nav-logo.png"
+		></a>
+	</div>
+	<form class="main-nav__search-form">
+		<input
+				name="search" placeholder="Search.." type="text"
+		>
+		<button type="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<ul class="main-nav__menu">
+		<li class="main-nav__menu-item">
+			<a class="main-nav__menu-item-link"><i class="fa-solid fa-user"></i></a>
+		</li>
+		<li class="main-nav__menu-item">
+			<a class="main-nav__menu-item-link"><i class="fa-solid fa-heart"></i></a>
+		</li>
+		<li class="main-nav__menu-item">
+			<a class="main-nav__menu-item-link"><i class="fa-solid fa-cart-shopping"></i></a>
+		</li>
+	</ul>
 </nav>
 <main>
-	<section id="cover-container">
-		<section id="cover">
-			<h1>Digitall  </h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			</p>
-		</section>
-	</section>
-	<section id="step-container">
-		<div id="step1" class="step">
-			<div class="fa-icon-container">
-				<img
-						src="images/phones/iphone13.png"
-						alt="iphone13"
-				>
-<!--				<i class="fa-solid fa-scissors fa-6x step-icon"></i>-->
-			</div>
-			<h3>iPhones</h3>
-			<p class="step-summary">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			</p>
-		</div>
-		<div id="step2" class="step">
-			<div class="fa-icon-container">
-				<img
-						src="images/phones/samsung-s22-ultra.png"
-						alt="samsung s22 ultra"
-				>
-<!--				<i class="fa-solid fa-paintbrush fa-6x step-icon"></i>-->
-			</div>
-			<h3>Samsung</h3>
-			<p class="step-summary">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			</p>
-		</div>
-		<div id="step3" class="step">
-			<div class="fa-icon-container">
-				<img
-						src="images/phones/oppo-reno-7.png"
-						alt="oppo reno 7"
-				>
-<!--				<i class="fa-solid fa-bag-shopping fa-6x step-icon"></i>-->
-			</div>
-			<h3>Oppo</h3>
-			<p class="step-summary">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			</p>
-		</div>
-		<div id="step4" class="step">
-			<div class="fa-icon-container">
-				<img
-						src="images/phones/tecno-camon-19.png"
-						alt="tecno camon 19"
-				>
-<!--				<i class="fa-solid fa-face-smile fa-6x step-icon"></i>-->
-			</div>
-			<h3>Tecno</h3>
-			<p class="step-summary">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-			</p>
+	<section class="hero">
+		<div class="hero__container">
+			<h1 class="hero__title">Digitall</h1>
+			<h2 class="hero__subtitle">
+				Quality Phones At Affordable Prices </h2>
 		</div>
 	</section>
-	<section id="store">
-		<p class="fresh-food">Quality Phones</p>
-		<h1 class="grocery-store">Our Phone Store</h1>
-		<p class="grocery-store-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		<div id="store-grid-container">
-			<div class="store-items-container">
-				<div class="item-icon-wrapper">
-					<i class="fa-solid fa-camera fa-4x"></i>
-				</div>
-				<h1>High Quality</h1>
-				<div class="item-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-			</div>
-			<div class="store-items-container">
-				<div class="item-icon-wrapper">
-					<i class="fa-solid fa-rocket fa-4x"></i>
-				</div>
-				<h1>Fast Delivery</h1>
-				<div class="item-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-			</div>
-			<div class="store-items-container">
-				<div class="item-icon-wrapper">
-					<i class="fab fa-twitter fa-4x"></i>
-				</div>
-				<h1>Sale</h1>
-				<div class="item-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-			</div>
-			<div class="store-items-container">
-				<div class="item-icon-wrapper">
-					<i class="fab fa-weixin fa-4x"></i>
-				</div>
-				<h1>Best Price</h1>
-				<div class="item-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				</div>
-			</div>
+	<section class="phones">
+		<h2 class="phones__title">Online Phone Store</h2>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/phones/gionee-m15-_3_.jpg"
+				></div>
+			<p class="phone__info">Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price">₦94,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone" src="images/phones/xiaomi_redmi_10.jpg"
+				></div>
+			<p class="phone__info">Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price"></p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone" src="images/phones/iphone_13.jpg"
+				></div>
+			<p class="phone__info">Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone</p>
+			<p class="phone__price">₦497,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone" src="images/phones/infinix-zero-x_3.jpg"
+				></div>
+			<p class="phone__info">Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone</p>
+			<p class="phone__price">₦193,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/tecno-camon-18i.jpg"
+				></div>
+			<p class="phone__info">Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+			<p class="phone__price">₦88,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/vivo_y33s_1.jpg"
+				></div>
+			<p class="phone__info">Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+			<p class="phone__price">₦109,000.00</p>
 		</div>
 	</section>
-
+	<section class="phones-latest">
+		<h2 class="phones-latest__title">Latest Phones</h2>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22.jpg"
+				></div>
+			<p class="phone__info">Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone</p>
+			<p class="phone__price">₦470,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone" src="images/latest_phones/samsung-galaxy-s22-ultra.jpg"
+				></div>
+			<p class="phone__info">Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone</p>
+			<p class="phone__price">₦750,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22_3.jpg"
+				></div>
+			<p class="phone__info">Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone</p>
+			<p class="phone__price">₦160,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
+				></div>
+			<p class="phone__info">Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price"></p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone " src="images/latest_phones/oppo-a16k.jpg"
+				></div>
+			<p class="phone__info">Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone </p>
+			<p class="phone__price">₦69,900.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/nokia-c30.jpg"
+				></div>
+			<p class="phone__info">Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price">₦62,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/tecno_spark_8c.jpg"
+				></div>
+			<p class="phone__info">Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price">₦60,500.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
+				></div>
+			<p class="phone__info">Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+			<p class="phone__price">₦133,000.00</p>
+		</div>
+		<div class="phone">
+			<div class="phone__image">
+				<img
+						alt="Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/latest_phones/vivo_y15s.jpg"
+				></div>
+			<p class="phone__info">Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+			<p class="phone__price">₦69,900.00</p>
+		</div>
+	</section>
+	<section class="about">
+		<h1 class="about__title">Phone-Shop Online Shopping Store in Nigeria</h1>
+		<p class="about__paragraph">Digitall Nigeria online phone store offers a superior shopping experience, rapid delivery with the largest selection of mobile phones and tablets such as Infinix Hot 11 Play, Infinix Note 11 Pro, oppo A96, Tecno Camon 18, Tecno Spark 8P, Samsung S22, Samsung S22 Plus, Samsung S22 Ultra, Samsung A23, Samsung A13, Samsung A53, Samsung A73, iPhone 13, iPhone 13 Pro, iPhone 13 Pro Max, Xiaomi Redmi Note 11 & 11 Pro, Gionee M15, Vivo V21, Vivo Y53s, and more. We're committed to becoming the most loved and trusted e-commerce website in Nigeria offering phones and accessories from top brands like Apple, Samsung, Tecno, Nokia, Infinix, Gionee, Huawei, Oppo, Xiaomi, Vivo and Itel. Buy phones online in Nigeria from Nigeria's top online phone store in Lagos where to buy cheap new phones online with the best phone shopping experience.</p>
+		<p class="about__paragraph">We believe service truly begins after the product you ordered arrives at your doorstep, we've dedicated ourselves to making sure that everyone enjoys safe and ok shopping. We take great pride in working passionately to exceed your expectations each and every time you shop with us.</p>
+	</section>
 </main>
 <footer>
 	<p>© Copyright 2022 - All Rights Reserved</p>
