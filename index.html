@@ -11,6 +11,7 @@
 	<link
 			href="images/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"
 	>
+	<link href="styles.css" rel="stylesheet">
 	<script
 			crossorigin="anonymous" defer src="https://kit.fontawesome.com/7a109a51e8.js"
 	></script>
@@ -18,10 +19,9 @@
 </head>
 <body>
 <nav class="main-nav">
-	<div class="main-nav__logo">
-		<a class="main-nav__logo-link"> <img
-				alt="Store's Logo" src="images/logo/nav-logo.png"
-		></a>
+	<div class="main-nav__logo"><img
+			alt="Store's Logo" src="images/logo/nav-logo.png" width="30" height="30"
+	>
 	</div>
 	<form class="main-nav__search-form">
 		<input
@@ -29,154 +29,155 @@
 		>
 		<button type="submit"><i class="fa fa-search"></i></button>
 	</form>
-	<ul class="main-nav__menu">
-		<li class="main-nav__menu-item">
-			<a class="main-nav__menu-item-link"><i class="fa-solid fa-user"></i></a>
-		</li>
-		<li class="main-nav__menu-item">
-			<a class="main-nav__menu-item-link"><i class="fa-solid fa-heart"></i></a>
-		</li>
-		<li class="main-nav__menu-item">
-			<a class="main-nav__menu-item-link"><i class="fa-solid fa-cart-shopping"></i></a>
-		</li>
-	</ul>
+	<div class="main-nav__menu">
+		<a class="main-nav__menu-item-link"><i class="fa-solid fa-user"></i></a>
+		<a class="main-nav__menu-item-link"><i class="fa-solid fa-heart"></i></a>
+		<a class="main-nav__menu-item-link"><i class="fa-solid fa-cart-shopping"></i></a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
 </nav>
 <main>
 	<section class="hero">
 		<div class="hero__container">
-			<h1 class="hero__title">Digitall</h1>
-			<h2 class="hero__subtitle">
-				Quality Phones At Affordable Prices </h2>
+				<h1 class="hero__title">Digitall</h1>
+				<h2 class="hero__subtitle">
+					Quality Phones At Affordable Prices </h2>
 		</div>
 	</section>
 	<section class="phones">
 		<h2 class="phones__title">Online Phone Store</h2>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/phones/gionee-m15-_3_.jpg"
-				></div>
-			<p class="phone__info">Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price">₦94,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone" src="images/phones/xiaomi_redmi_10.jpg"
-				></div>
-			<p class="phone__info">Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price"></p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone" src="images/phones/iphone_13.jpg"
-				></div>
-			<p class="phone__info">Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone</p>
-			<p class="phone__price">₦497,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone" src="images/phones/infinix-zero-x_3.jpg"
-				></div>
-			<p class="phone__info">Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone</p>
-			<p class="phone__price">₦193,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/tecno-camon-18i.jpg"
-				></div>
-			<p class="phone__info">Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
-			<p class="phone__price">₦88,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/vivo_y33s_1.jpg"
-				></div>
-			<p class="phone__info">Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
-			<p class="phone__price">₦109,000.00</p>
+		<div class="phones__container">
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/phones/gionee-m15-_3_.jpg"
+					></div>
+				<p class="phone__info">Gionee M15 (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price">₦94,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone" src="images/phones/xiaomi_redmi_10.jpg"
+					></div>
+				<p class="phone__info">Xiaomi Redmi 10 (4GB RAM, 64GB ROM) / (4GB RAM, 128GB ROM) / (6GB RAM, 128GB ROM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price"></p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone" src="images/phones/iphone_13.jpg"
+					></div>
+				<p class="phone__info">Apple iPhone 13 Single SIM (4GB RAM, 512GB ROM / 256GB ROM / 128GB ROM) 5G Mobile Phone</p>
+				<p class="phone__price">₦497,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone" src="images/phones/infinix-zero-x_3.jpg"
+					></div>
+				<p class="phone__info">Infinix Zero X Pro (256GB ROM 8GB RAM) Dual SIM 4G LTE Mobile Phone</p>
+				<p class="phone__price">₦193,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/tecno-camon-18i.jpg"
+					></div>
+				<p class="phone__info">Tecno Camon 18i (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+				<p class="phone__price">₦88,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/phones/vivo_y33s_1.jpg"
+					></div>
+				<p class="phone__info">Vivo Y33s (4GB RAM 128GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+				<p class="phone__price">₦109,000.00</p>
+			</div>
 		</div>
 	</section>
-	<section class="phones-latest">
-		<h2 class="phones-latest__title">Latest Phones</h2>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22.jpg"
-				></div>
-			<p class="phone__info">Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone</p>
-			<p class="phone__price">₦470,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone" src="images/latest_phones/samsung-galaxy-s22-ultra.jpg"
-				></div>
-			<p class="phone__info">Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone</p>
-			<p class="phone__price">₦750,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22_3.jpg"
-				></div>
-			<p class="phone__info">Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone</p>
-			<p class="phone__price">₦160,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
-				></div>
-			<p class="phone__info">Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price"></p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone " src="images/latest_phones/oppo-a16k.jpg"
-				></div>
-			<p class="phone__info">Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone </p>
-			<p class="phone__price">₦69,900.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/nokia-c30.jpg"
-				></div>
-			<p class="phone__info">Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price">₦62,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/tecno_spark_8c.jpg"
-				></div>
-			<p class="phone__info">Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price">₦60,500.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
-				></div>
-			<p class="phone__info">Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
-			<p class="phone__price">₦133,000.00</p>
-		</div>
-		<div class="phone">
-			<div class="phone__image">
-				<img
-						alt="Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/latest_phones/vivo_y15s.jpg"
-				></div>
-			<p class="phone__info">Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone</p>
-			<p class="phone__price">₦69,900.00</p>
+	<section class="phones phones-latest">
+		<h2 class="phones__title">Latest Phones</h2>
+		<div class="phones__container">
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22.jpg"
+					></div>
+				<p class="phone__info">Samsung Galaxy S22 Dual SIM (8GB RAM, 128GB ROM / 256GB ROM) 5G Smartphone</p>
+				<p class="phone__price">₦470,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone" src="images/latest_phones/samsung-galaxy-s22-ultra.jpg"
+					></div>
+				<p class="phone__info">Samsung Galaxy S22 Ultra Dual SIM (12GB RAM, 256GB ROM / 512GB ROM) 5G Smartphone</p>
+				<p class="phone__price">₦750,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone" src="images/latest_phones/samsung_galaxy_s22_3.jpg"
+					></div>
+				<p class="phone__info">Samsung Galaxy S22 Plus Dual SIM (8GB RAM 256GB ROM) 5G Smartphone</p>
+				<p class="phone__price">₦160,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
+					></div>
+				<p class="phone__info">Xiaomi Redmi Note 11 Pro (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price"></p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone " src="images/latest_phones/oppo-a16k.jpg"
+					></div>
+				<p class="phone__info">Oppo A16k (2GB RAM, 32GB ROM) / (4GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone </p>
+				<p class="phone__price">₦69,900.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/nokia-c30.jpg"
+					></div>
+				<p class="phone__info">Nokia C30 (2GB RAM, 32GB ROM) / (3GB RAM, 32GB ROM / (3GB RAM, 64GB ROM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price">₦62,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/tecno_spark_8c.jpg"
+					></div>
+				<p class="phone__info">Tecno Spark 8C (64GB ROM, 2GB RAM / 3GB RAM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price">₦60,500.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone" src="images/latest_phones/xiaomi_redmi_note_11_8__1.jpg"
+					></div>
+				<p class="phone__info">Xiaomi Redmi Note 11s (128GB ROM, 6GB RAM / 8GB RAM) 4G LTE Dual SIM Smartphone</p>
+				<p class="phone__price">₦133,000.00</p>
+			</div>
+			<div class="phone">
+				<div class="phone__image">
+					<img
+							alt="Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone" src="images/latest_phones/vivo_y15s.jpg"
+					></div>
+				<p class="phone__info">Vivo Y15s (3GB RAM 32GB ROM) Dual SIM 4G LTE Mobile Phone</p>
+				<p class="phone__price">₦69,900.00</p>
+			</div>
 		</div>
 	</section>
 	<section class="about">
-		<h1 class="about__title">Phone-Shop Online Shopping Store in Nigeria</h1>
+		<h2 class="about__title">Phone-Shop Online Shopping Store in Nigeria</h2>
 		<p class="about__paragraph">Digitall Nigeria online phone store offers a superior shopping experience, rapid delivery with the largest selection of mobile phones and tablets such as Infinix Hot 11 Play, Infinix Note 11 Pro, oppo A96, Tecno Camon 18, Tecno Spark 8P, Samsung S22, Samsung S22 Plus, Samsung S22 Ultra, Samsung A23, Samsung A13, Samsung A53, Samsung A73, iPhone 13, iPhone 13 Pro, iPhone 13 Pro Max, Xiaomi Redmi Note 11 & 11 Pro, Gionee M15, Vivo V21, Vivo Y53s, and more. We're committed to becoming the most loved and trusted e-commerce website in Nigeria offering phones and accessories from top brands like Apple, Samsung, Tecno, Nokia, Infinix, Gionee, Huawei, Oppo, Xiaomi, Vivo and Itel. Buy phones online in Nigeria from Nigeria's top online phone store in Lagos where to buy cheap new phones online with the best phone shopping experience.</p>
 		<p class="about__paragraph">We believe service truly begins after the product you ordered arrives at your doorstep, we've dedicated ourselves to making sure that everyone enjoys safe and ok shopping. We take great pride in working passionately to exceed your expectations each and every time you shop with us.</p>
 	</section>
