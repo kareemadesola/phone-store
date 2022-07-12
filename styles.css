@@ -1,107 +1,149 @@
+:root {
+    --background-color: #333;
+}
+
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-	font-family: OpenSans, sans-serif;
-	font-size: 15px;
+    font-family: OpenSans, sans-serif;
+    font-size: 15px;
 }
 
 .main-nav {
-	display: flex;
-	justify-content: space-between;
-	/*height: 5vh;*/
-	overflow: hidden;
-	/*background-color: #333;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--background-color);
+    position: fixed;
+    width: 100%;
 }
 
-.main-nav a {
-	float: left;
-	display: block;
-	/*color: #f2f2f2;*/
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+.main-nav__logo {
+    padding-left: 1rem;
+}
+
+.main-nav__menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .main-nav a:hover {
-	background-color: #ddd;
-	color: black;
-}
-
-.main-nav a.active {
-	background-color: #04AA6D;
-	color: white;
+    background-color: #ddd;
+    color: black;
 }
 
 .main-nav a {
-	display: none;
+    display: none;
 }
 
 .main-nav a.icon {
-	float: right;
-	display: block;
+    float: right;
+    display: block;
 }
 
 .main-nav.responsive {
-	position: relative;
+    position: relative;
 }
 
 .main-nav.responsive a.icon {
-	position: absolute;
-	right: 0;
-	top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .main-nav.responsive a {
-	float: none;
-	display: block;
-	text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
 }
 
 .hero {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 95vh;
-	background-image: url(images/pexels-pixabay-207589.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: #a7a8c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/pexels-pixabay-207589.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #a7a8c1;
+    text-align: center;
 }
 
-.hero__unify {
-	justify-content: center;
-	align-self: center;
+.hero__subtitle {
+    padding: 0.5rem 0;
+}
+
+section h2 {
+    padding: 3rem 0.5rem 0;
+}
+
+p {
+    text-align: justify;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.6;
 }
 
 .phones__container {
-	display: grid;
-	gap: 5px;
+    display: grid;
+    gap: 5px;
 }
 
+.phone__info {
+    padding: 0 3rem;
+}
+
+.phone__price {
+    padding: 0.5rem 3rem;
+}
+
+.about__paragraph {
+    /*text-indent: 3rem;*/
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
 
 @media screen and (min-width: 481px) {
-	.phones__container {
-		grid-template-columns: repeat(2, 1fr);
-	}
+    .phones__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-	.main-nav .icon {
-		display: none;
-	}
+    .main-nav a, .main-nav.responsive a {
+        display: block;
+    }
+
+    .main-nav a.icon, .main-nav.responsive a.icon {
+        display: none;
+    }
 
 }
 
 @media screen and (min-width: 768px) {
-	.phones__container {
-		grid-template-columns: repeat(3, 1fr);
-	}
+    .phones__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
