@@ -109,7 +109,7 @@ p {
     background-color: white;
 }
 
-.phone:active {
+.phone:active, .phone:focus {
     background-color: hsl(204, 13%, 77%);
 }
 
