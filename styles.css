@@ -109,7 +109,7 @@ p {
     background-color: white;
 }
 
-.phone:hover, .phone:active {
+.phone:active {
     background-color: hsl(204, 13%, 77%);
 }
 
@@ -139,6 +139,12 @@ footer p {
 }
 
 @media screen and (min-width: 481px) {
+    @media (hover: hover) and (pointer: fine) {
+        .phone:hover {
+            background-color: hsl(204, 13%, 77%);
+        }
+
+    }
     .phones__container {
         grid-template-columns: repeat(2, 1fr);
     }
