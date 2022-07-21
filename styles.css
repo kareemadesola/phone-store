@@ -15,6 +15,13 @@ html {
 body {
     font-family: OpenSans, sans-serif;
     font-size: 15px;
+    background-color: #f7f7f7;
+}
+
+section:not(.hero) {
+    padding: 2.5rem 1.5rem 1.5rem;
+    background-color: white;
+
 }
 
 .main-nav {
@@ -41,7 +48,7 @@ body {
     font-size: 17px;
 }
 
-.main-nav a:hover {
+.main-nav a:hover, a.main-nav a:active {
     background-color: #ddd;
     color: black;
 }
@@ -88,9 +95,6 @@ body {
     padding: 0.5rem 0;
 }
 
-section h2 {
-    padding: 3rem 0.5rem 0;
-}
 
 p {
     text-align: justify;
@@ -98,11 +102,21 @@ p {
     letter-spacing: 0.1rem;
     word-spacing: 0.1rem;
     line-height: 1.6;
+    color: grey;
+}
+
+.phone {
+    background-color: white;
+}
+
+.phone:active, .phone:focus {
+    background-color: hsl(204, 13%, 77%);
 }
 
 .phones__container {
     display: grid;
     gap: 5px;
+    align-items: end;
 }
 
 .phone__info {
@@ -111,16 +125,13 @@ p {
 
 .phone__price {
     padding: 0.5rem 3rem;
+    color: black;
+    font-weight: bold;
 }
 
-.about__paragraph {
-    /*text-indent: 3rem;*/
-    padding: 0 1rem;
-}
 
 footer {
     background-color: var(--background-color);
-    color: white;
 }
 
 footer p {
@@ -128,6 +139,12 @@ footer p {
 }
 
 @media screen and (min-width: 481px) {
+    @media (hover: hover) and (pointer: fine) {
+        .phone:hover {
+            background-color: hsl(204, 13%, 77%);
+        }
+
+    }
     .phones__container {
         grid-template-columns: repeat(2, 1fr);
     }
