@@ -21,7 +21,7 @@
 <body>
 <nav class="main-nav">
     <div class="main-nav__logo"><img
-            alt="Store's Logo" src="images/logo/nav-logo.png" width="30" height="30"
+            alt="Store's Logo" height="30" src="images/logo/nav-logo.png" width="30"
     >
     </div>
     <form class="main-nav__search-form">
@@ -34,7 +34,7 @@
         <a class="main-nav__menu-item-link"><i class="fa-solid fa-user"></i></a>
         <a class="main-nav__menu-item-link"><i class="fa-solid fa-heart"></i></a>
         <a class="main-nav__menu-item-link"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
@@ -219,6 +219,18 @@
     <p>© Copyright 2022 - All Rights Reserved</p>
 </footer>
 <script>
+    // let phones = document.getElementsByClassName('.phone')
+    // for (let i = 0; i < phones.length; i++) {
+    //     phones[i].tabIndex = 0
+    //     // phones[i].innerHTML = <p>Test</p>
+    //     phones[i].classList.toggle('responsive')
+    // }
+
+    let phones = document.querySelectorAll(".phone")
+    phones.forEach(phone => {
+        phone.tabIndex = 0
+    })
+
     function myFunction() {
         let x = document.querySelector(".main-nav");
         x.classList.toggle("responsive")

@@ -109,8 +109,20 @@ p {
     background-color: white;
 }
 
-.phone:active, .phone:focus {
-    background-color: hsl(204, 13%, 77%);
+@media (hover: hover) and (pointer: fine) {
+    .phone:hover {
+        background-color: hsl(204, 13%, 77%);
+    }
+
+}
+
+.phone:focus {
+    background-color: orange;
+}
+
+.phone:active {
+    background-color: black;
+    /*background-color: hsl(204, 13%, 77%);*/
 }
 
 .phones__container {
@@ -139,12 +151,7 @@ footer p {
 }
 
 @media screen and (min-width: 481px) {
-    @media (hover: hover) and (pointer: fine) {
-        .phone:hover {
-            background-color: hsl(204, 13%, 77%);
-        }
 
-    }
     .phones__container {
         grid-template-columns: repeat(2, 1fr);
     }
